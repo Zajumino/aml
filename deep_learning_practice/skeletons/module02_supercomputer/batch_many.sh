@@ -25,10 +25,10 @@
 #SBATCH --error=results/xor_%j_stderr.txt
 #SBATCH --time=00:02:00
 #SBATCH --job-name=xor_test
-#SBATCH --mail-user=INSERT_YOUR_EMAIL_ADDRESS_HERE
+#SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
-#SBATCH --chdir=/home/fagg/aml/demos/basics
-#SBATCH --array=0-3
+#SBATCH --chdir=/home/cs5043/aml/deep_learning_practice/skeletons/module02_supercomputer
+#SBATCH --array=0-3, 10
 #
 #################################################
 # Do not change this line unless you have your own python/tensorflow/keras set up
