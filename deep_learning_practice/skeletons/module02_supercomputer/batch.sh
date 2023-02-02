@@ -21,9 +21,9 @@
 #SBATCH --error=results/xor_%j_stderr.txt
 #SBATCH --time=00:02:00
 #SBATCH --job-name=xor_test
-#SBATCH --mail-user=INSERT_YOUR_EMAIL_ADDRESS_HERE
+#SBATCH --mail-user=ikang@kennedygang.com
 #SBATCH --mail-type=ALL
-#SBATCH --chdir=/home/fagg/aml/demos/basics
+#SBATCH --chdir=/home/cs504306/aml/deep_leaning_practice
 #
 #################################################
 # Do not change this line unless you have your own python/tensorflow/keras set up
