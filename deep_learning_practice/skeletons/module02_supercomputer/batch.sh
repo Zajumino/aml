@@ -23,7 +23,7 @@
 #SBATCH --job-name=xor_test
 #SBATCH --mail-user=ikang@kennedygang.com
 #SBATCH --mail-type=ALL
-#SBATCH --chdir=/home/cs504306/aml/deep_leaning_practice
+#SBATCH --chdir=/home/cs504306/aml/deep_leaning_practice/skeletons/module02_supercomputer
 #
 #################################################
 # Do not change this line unless you have your own python/tensorflow/keras set up
