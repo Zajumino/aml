@@ -43,7 +43,9 @@ def build_model(n_inputs, n_hidden, n_output, activation='elu', lrate=0.001):
     '''
     model = Sequential();
     model.add(InputLayer(input_shape=(n_inputs,)))
-    model.add(Dense(n_hidden, use_bias=True, name="hidden", activation=activation))
+    for i, n in enumerate(n_hidden):
+        model.add(Dense(n, use_bias=True, name="hidden_%d"%i, activation=activation))
+    #model.add(Dense(n_hidden, use_bias=True, name="hidden", activation=activation))
     model.add(Dense(n_output, use_bias=True, name="output", activation=activation))
     
     # Optimizer
@@ -63,7 +65,7 @@ def args2string(args):
     
     :param args: Command line arguments
     '''
-    return "exp_%02d_hidden_%02d"%(args.exp, args.hidden)
+    return "exp_%02d_hidden_%02d"%(args.exp, "_".join([str(i) for i in args.hidden]))
     
     
 ########################################################
@@ -81,7 +83,7 @@ def execute_exp(args):
     outs = np.array([[0], [1], [1], [0]])
     
     # Build model
-    model = build_model(ins.shape[1], args.hidden, outs.shape[1], activation='sigmoid')
+    model = build_model(ins.shape[1], args.hidden, outs.shape[1], activation='sigmoid', lrate=args.lrate)
 
     # Callbacks
     
@@ -101,7 +103,7 @@ def execute_exp(args):
         # Note: faking validation data set
         history = model.fit(x=ins,
                             y=outs,
-                            verbose=False,
+                            verbose=(args.verbose >= 2),
                             validation_data=(ins, outs),
                             callbacks=[early_stopping_cb]
             )
@@ -159,9 +161,15 @@ def create_parser():
     
     parser.add_argument('--exp', type=int, default=0, help='Experiment index')
     parser.add_argument('--epochs', type=int, default=100, help='Number of training epochs')
-    parser.add_argument('--hidden', type=int, default=2, help='Number of Hidden Units')
+    #parser.add_argument('--hidden', type=int, default=2, help='Number of Hidden Units')
+    parser.add_argument('--lrate', type=float, default=0.0001, help='Learning Rate')
+    
+    parser.add_argument('--hidden', nargs='+', type=int, default=[5], help='Number of Hidden Units per layer (sequence of inputs)')
+    
     parser.add_argument('gpu', action-'store_true', help='Use a GPU')
     parser.add_argument('--nogo', action='store_true', help='Do not perform the experiment')
+    
+    parser.add_argument('--verbose', '-v', action='count', default=0, help='Verbosity Level')
     
     return parser
 
