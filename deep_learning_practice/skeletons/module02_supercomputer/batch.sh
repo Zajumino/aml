@@ -21,7 +21,7 @@
 #SBATCH --error=results/xor_%j_stderr.txt
 #SBATCH --time=00:02:00
 #SBATCH --job-name=xor_test
-#SBATCH --mail-user=ikang@kennedygang.com
+#SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
 #SBATCH --chdir=/home/cs504306/aml/deep_leaning_practice/skeletons/module02_supercomputer
 #
