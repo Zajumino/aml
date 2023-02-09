@@ -50,7 +50,7 @@ def build_model(n_inputs, n_hidden, n_output, activation='elu', lrate=0.001):
     
     # Optimizer
     opt = tf.keras.optimizers.Adam(learning_rate=lrate, beta_1=0.9, beta_2=0.999,
-                                epsilon=None, decay=0.0, amsgrad=False)
+                                   epsilon=None, decay=0.0, amsgrad=False)
     
     # Bind the optimizer and the loss function to the model
     model.compile(loss='mse', optimizer=opt)
@@ -65,7 +65,7 @@ def args2string(args):
     
     :param args: Command line arguments
     '''
-    return "exp_%02d_hidden_%02d"%(args.exp, "_".join([str(i) for i in args.hidden]))
+    return "exp_%02d_hidden_%s"%(args.exp, "_".join([str(i) for i in args.hidden]))
     
     
 ########################################################
@@ -127,7 +127,7 @@ def display_learning_curve(fname):
     # Load the history file and display it
     #fp = #TODO
     # TODO
-    fp.close()
+    #fp.close()
     
     # Display
     plt.plot(history['loss'])
@@ -166,7 +166,7 @@ def create_parser():
     
     parser.add_argument('--hidden', nargs='+', type=int, default=[5], help='Number of Hidden Units per layer (sequence of inputs)')
     
-    parser.add_argument('gpu', action-'store_true', help='Use a GPU')
+    parser.add_argument('gpu', action='store_true', help='Use a GPU')
     parser.add_argument('--nogo', action='store_true', help='Do not perform the experiment')
     
     parser.add_argument('--verbose', '-v', action='count', default=0, help='Verbosity Level')
