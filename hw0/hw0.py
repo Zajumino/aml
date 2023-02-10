@@ -91,7 +91,7 @@ def execute_exp(args):
         print("Done Training")
         
         # Save the training history
-        with open("results/xor_results_{}.pkl".format(argstring), "wb") as fp:
+        with open('results/hw0_results_{}.pkl'.format(argstring), 'wb') as fp:
             pickle.dump(history.history, fp)
             pickle.dump(args, fp)
 
@@ -159,7 +159,7 @@ if __name__ == "__main__":
     # Turn off GPU?
     if not args.gpu:
         os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
-        
+    
     # GPU check
     physical_devices = tf.config.list_physical_devices('GPU') 
     n_physical_devices = len(physical_devices)
