@@ -85,7 +85,7 @@ def execute_exp(args):
     
     # Callbacks
     #early_stopping_cb = tf.keras.callbacks.EarlyStopping(patience=100, restore_best_weights=True, min_delta=0.0001)
-    callback = ThresholdCallback(0.1)
+    callback = ThresholdCallback(0.001)
     
     # Describe arguments
     argstring = args2string(args)
@@ -103,9 +103,13 @@ def execute_exp(args):
         print("Done Training")
         
         # Save the training history
+
+        results = history.history
+        results['args'] = [args]
+        results['pred'] = model.predict(ins)
+
         with open('results/hw0_results_{}.pkl'.format(argstring), 'wb') as fp:
-            pickle.dump(history.history, fp)
-            pickle.dump(args, fp)
+            pickle.dump(results, fp)
 
 def display_learning_curve(fname):
     '''
