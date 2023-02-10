@@ -5,6 +5,7 @@ import tensorflow as tf
 from tensorflow.keras import layers
 import os
 import time
+import re
 
 import argparse
 import pickle
@@ -29,7 +30,7 @@ def build_model(n_inputs, n_hidden, n_output, activation='relu', lrate=0.001):
     
     # Hidden layers
     for i, n in enumerate(n_hidden):
-        model.add(layers.Dense(n, use_bias=True, name='hidden_{i:d}', activation=activation))
+        model.add(layers.Dense(n, use_bias=True, name='hidden_{:d}'.format(i), activation=activation))
     
     # Output layer
     model.add(layers.Dense(n_output, use_bias=False, name='output', activation='tanh'))
@@ -72,9 +73,7 @@ def execute_exp(args):
     model = build_model(ins.shape[1], args.hidden, outs.shape[1], activation=tf.math.sin, lrate=args.lrate)
     
     # Callbacks
-    early_stopping_cb = keras.callbacks.EarlyStopping(patience=100,
-                                                      restore_best_weights=True,
-                                                      min_delta=0.0001)
+    early_stopping_cb = tf.keras.callbacks.EarlyStopping(patience=100, restore_best_weights=True, min_delta=0.0001)
     
     # Describe arguments
     argstring = args2string(args)
@@ -87,19 +86,14 @@ def execute_exp(args):
         print("Training...")
         
         # Note: faking validation data set
-        history = model.fit(x=ins,
-                            y=outs,
-                            verbose=(args.verbose >= 2),
-                            validation_data=(ins, outs),
-                            callbacks=[early_stopping_cb])
+        history = model.fit(x=ins, y=outs, verbose=(args.verbose >= 2), validation_data=(ins, outs), callbacks=[early_stopping_cb])
         
         print("Done Training")
         
         # Save the training history
-        fp = open("results/xor_results_%s.pkl" %(argstring), "wb")
-        pickle.dump(history.history, fp)
-        pickle.dump(args, fp)
-        fp.close()
+        with open("results/xor_results_{}.pkl".format(argstring), "wb") as fp:
+            pickle.dump(history.history, fp)
+            pickle.dump(args, fp)
 
 def display_learning_curve(fname):
     '''
@@ -109,9 +103,9 @@ def display_learning_curve(fname):
     '''
     
     # Load the history file and display it
-    #fp = #TODO
-    # TODO
-    #fp.close()
+    fp = open(fname, "rb")
+    history = pickle.load(fp)
+    fp.close()
     
     # Display
     plt.plot(history['loss'])
@@ -145,7 +139,7 @@ def create_parser():
     parser.add_argument('--exp', type=int, default=0, help='Experiment index')
     parser.add_argument('--epochs', type=int, default=100, help='Number of training epochs')
     #parser.add_argument('--hidden', type=int, default=2, help='Number of Hidden Units')
-    parser.add_argument('--hidden', nargs='+', type=int, default=[5], help='Number of Hidden Units per layer (sequence of inputs)')
+    parser.add_argument('--hidden', nargs='+', type=int, default=[3, 3], help='Number of Hidden Units per layer (sequence of inputs)')
     parser.add_argument('--lrate', type=float, default=0.001, help='Learning Rate')
     parser.add_argument('--gpu', action='store_true', help='Use a GPU')
     parser.add_argument('--nogo', action='store_true', help='Do not perform the experiment')
