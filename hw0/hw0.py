@@ -86,7 +86,7 @@ def execute_exp(args):
         print("Training...")
         
         # Note: faking validation data set
-        history = model.fit(x=ins, y=outs, verbose=(args.verbose >= 2), validation_data=(ins, outs), callbacks=[early_stopping_cb])
+        history = model.fit(x=ins, y=outs, epochs=args.epochs, verbose=(args.verbose >= 2), validation_data=(ins, outs))
         
         print("Done Training")
         
@@ -137,9 +137,9 @@ def create_parser():
     parser = argparse.ArgumentParser(prog='my Network')
     
     parser.add_argument('--exp', type=int, default=0, help='Experiment index')
-    parser.add_argument('--epochs', type=int, default=100, help='Number of training epochs')
+    parser.add_argument('--epochs', type=int, default=1000, help='Number of training epochs')
     #parser.add_argument('--hidden', type=int, default=2, help='Number of Hidden Units')
-    parser.add_argument('--hidden', nargs='+', type=int, default=[3, 3], help='Number of Hidden Units per layer (sequence of inputs)')
+    parser.add_argument('--hidden', nargs='+', type=int, default=[10, 10], help='Number of Hidden Units per layer (sequence of inputs)')
     parser.add_argument('--lrate', type=float, default=0.001, help='Learning Rate')
     parser.add_argument('--gpu', action='store_true', help='Use a GPU')
     parser.add_argument('--nogo', action='store_true', help='Do not perform the experiment')
