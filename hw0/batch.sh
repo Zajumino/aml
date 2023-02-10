@@ -32,5 +32,5 @@
 conda activate tf
 
 # Change this line to start an instance of your experiment
-python hw0.py --epochs 1000 --exp 0
+python hw0.py --epochs 1000 --exp 10
 

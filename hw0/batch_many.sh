@@ -23,7 +23,7 @@
 # The %j is translated into the job number
 #SBATCH --output=results/hw0_%j_stdout.txt
 #SBATCH --error=results/hw0_%j_stderr.txt
-#SBATCH --time=00:10:00
+#SBATCH --time=00:20:00
 #SBATCH --job-name=hw0_test
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
