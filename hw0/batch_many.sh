@@ -16,18 +16,18 @@
 # Reasonable partitions: debug_5min, debug_30min, normal
 #
 
-#SBATCH --partition=debug_30min
+#SBATCH --partition=debug_5min
 #SBATCH --ntasks=1
 # memory in MB
 #SBATCH --mem=1024
 # The %j is translated into the job number
 #SBATCH --output=results/hw0_%j_stdout.txt
 #SBATCH --error=results/hw0_%j_stderr.txt
-#SBATCH --time=00:22:00
+#SBATCH --time=00:04:00
 #SBATCH --job-name=hw0_test
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
-#SBATCH --chdir=/home/cs5043/aml/hw0
+#SBATCH --chdir=/home/cs504306/aml/hw0
 #SBATCH --array=0-9
 #
 #################################################
@@ -37,5 +37,5 @@
 conda activate tf
 
 # Change this line to start an instance of your experiment
-python hw0.py --epochs 1000 --exp $SLURM_ARRAY_TASK_ID
+python hw0.py --epochs 1000 --exp $SLURM_ARRAY_TASK_ID --hidden 8 4
 

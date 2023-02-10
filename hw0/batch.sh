@@ -23,7 +23,7 @@
 #SBATCH --job-name=hw0_test
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
-#SBATCH --chdir=/home/cs5043/aml/hw0
+#SBATCH --chdir=/home/cs504306/aml/hw0
 #
 #################################################
 # Do not change this line unless you have your own python/tensorflow/keras set up

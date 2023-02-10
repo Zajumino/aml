@@ -1,0 +1,20 @@
+NO GPU
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ hidden_0 (Dense)            (None, 10)                110       
+                                                                 
+ hidden_1 (Dense)            (None, 10)                110       
+                                                                 
+ output (Dense)              (None, 1)                 10        
+                                                                 
+=================================================================
+Total params: 230
+Trainable params: 230
+Non-trainable params: 0
+_________________________________________________________________
+None
+EXPERIMENT: exp_00_hidden_10_10
+Training...
+Done Training
