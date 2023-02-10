@@ -37,4 +37,4 @@
 conda activate tf
 
 # Change this line to start an instance of your experiment
-python hw0.py --epochs 6000 --exp $SLURM_ARRAY_TASK_ID
+python hw0.py --epochs 2000 --exp $SLURM_ARRAY_TASK_ID

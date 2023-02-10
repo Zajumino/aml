@@ -85,7 +85,7 @@ def execute_exp(args):
     
     # Callbacks
     #early_stopping_cb = tf.keras.callbacks.EarlyStopping(patience=100, restore_best_weights=True, min_delta=0.0001)
-    callback = ThresholdCallback(0.001)
+    callback = ThresholdCallback(0.0001)
     
     # Describe arguments
     argstring = args2string(args)
