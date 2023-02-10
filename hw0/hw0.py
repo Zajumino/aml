@@ -46,6 +46,14 @@ def build_model(n_inputs, n_hidden, n_output, activation='relu', lrate=0.001):
     
     return model
 
+class ValidCallback(tf.keras.callbacks.Callback):
+    '''
+    A custom callback to stop when target validation accuracy is achieved
+    '''
+    def on_epoch_end(self, epoch, logs=None):
+        if logs.get('accuracy') >= 0.95:
+            self.model.stop_training = True
+
 def args2string(args):
     '''
     Translate the current set of arguments
@@ -73,7 +81,8 @@ def execute_exp(args):
     model = build_model(ins.shape[1], args.hidden, outs.shape[1], activation=tf.math.sin, lrate=args.lrate)
     
     # Callbacks
-    early_stopping_cb = tf.keras.callbacks.EarlyStopping(patience=100, restore_best_weights=True, min_delta=0.0001)
+    #early_stopping_cb = tf.keras.callbacks.EarlyStopping(patience=100, restore_best_weights=True, min_delta=0.0001)
+    valid_callback = ValidCallback()
     
     # Describe arguments
     argstring = args2string(args)
@@ -86,7 +95,7 @@ def execute_exp(args):
         print("Training...")
         
         # Note: faking validation data set
-        history = model.fit(x=ins, y=outs, epochs=args.epochs, verbose=(args.verbose >= 2), validation_data=(ins, outs))
+        history = model.fit(x=ins, y=outs, epochs=args.epochs, verbose=(args.verbose >= 2), validation_data=(ins, outs), callbacks=[valid_callback])
         
         print("Done Training")
         
