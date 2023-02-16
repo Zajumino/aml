@@ -106,7 +106,6 @@ def exp_type_to_hyperparameters(args):
     # TODO (useful for having multiple Cartesian product parameter sets)
     
     if args.exp_type == 'bmi':
-        # HW 1
         p = {'Ntraining': [1,2,3,4,5,9,13,18], 
              'rotation': range(20)}
     else: 
@@ -281,7 +280,7 @@ def create_parser():
     parser = argparse.ArgumentParser(description='BMI Learner', fromfile_prefix_chars='@')
 
     # Problem definition
-    parser.add_argument('--dataset', type=str, default='bmi_dataset2.pkl', help='Data set file')
+    parser.add_argument('--dataset', type=str, default='../../datasets/bmi_dataset2.pkl', help='Data set file')
     parser.add_argument('--output_type', type=str, default='ddtheta', help='Type to predict')
     parser.add_argument('--predict_dim', type=int, default=None, help="Dimension of the output to predict")
     parser.add_argument('--Nfolds', type=int, default=20, help='Maximum number of folds')
