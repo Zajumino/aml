@@ -280,7 +280,7 @@ def create_parser():
     parser = argparse.ArgumentParser(description='BMI Learner', fromfile_prefix_chars='@')
 
     # Problem definition
-    parser.add_argument('--dataset', type=str, default='../../datasets/bmi_dataset2.pkl', help='Data set file')
+    parser.add_argument('--dataset', type=str, default='/home/fagg/datasets/bmi/bmi_dataset2.pkl', help='Data set file')
     parser.add_argument('--output_type', type=str, default='ddtheta', help='Type to predict')
     parser.add_argument('--predict_dim', type=int, default=None, help="Dimension of the output to predict")
     parser.add_argument('--Nfolds', type=int, default=20, help='Maximum number of folds')
