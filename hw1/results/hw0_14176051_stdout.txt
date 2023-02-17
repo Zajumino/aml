@@ -1,0 +1,6 @@
+NO GPU
+Total jobs: 160
+{'Ntraining': 1, 'rotation': 5}
+Params: JI_Ntraining_1_rotation_5
+File name base: ./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_5
+File already exists

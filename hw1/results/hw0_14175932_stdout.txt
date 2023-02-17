@@ -1,0 +1,154 @@
+NO GPU
+Total jobs: 160
+MISSING RUNS:
+ 10	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_10_results.pkl
+ 11	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_11_results.pkl
+ 12	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_12_results.pkl
+ 13	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_13_results.pkl
+ 14	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_14_results.pkl
+ 15	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_15_results.pkl
+ 16	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_16_results.pkl
+ 17	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_17_results.pkl
+ 18	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_18_results.pkl
+ 19	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_1_rotation_19_results.pkl
+ 20	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_0_results.pkl
+ 21	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_1_results.pkl
+ 22	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_2_results.pkl
+ 23	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_3_results.pkl
+ 24	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_4_results.pkl
+ 25	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_5_results.pkl
+ 26	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_6_results.pkl
+ 27	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_7_results.pkl
+ 28	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_8_results.pkl
+ 29	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_9_results.pkl
+ 30	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_10_results.pkl
+ 31	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_11_results.pkl
+ 32	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_12_results.pkl
+ 33	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_13_results.pkl
+ 34	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_14_results.pkl
+ 35	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_15_results.pkl
+ 36	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_16_results.pkl
+ 37	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_17_results.pkl
+ 38	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_18_results.pkl
+ 39	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_2_rotation_19_results.pkl
+ 40	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_0_results.pkl
+ 41	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_1_results.pkl
+ 42	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_2_results.pkl
+ 43	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_3_results.pkl
+ 44	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_4_results.pkl
+ 45	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_5_results.pkl
+ 46	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_6_results.pkl
+ 47	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_7_results.pkl
+ 48	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_8_results.pkl
+ 49	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_9_results.pkl
+ 50	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_10_results.pkl
+ 51	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_11_results.pkl
+ 52	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_12_results.pkl
+ 53	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_13_results.pkl
+ 54	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_14_results.pkl
+ 55	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_15_results.pkl
+ 56	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_16_results.pkl
+ 57	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_17_results.pkl
+ 58	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_18_results.pkl
+ 59	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_3_rotation_19_results.pkl
+ 60	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_0_results.pkl
+ 61	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_1_results.pkl
+ 62	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_2_results.pkl
+ 63	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_3_results.pkl
+ 64	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_4_results.pkl
+ 65	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_5_results.pkl
+ 66	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_6_results.pkl
+ 67	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_7_results.pkl
+ 68	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_8_results.pkl
+ 69	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_9_results.pkl
+ 70	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_10_results.pkl
+ 71	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_11_results.pkl
+ 72	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_12_results.pkl
+ 73	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_13_results.pkl
+ 74	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_14_results.pkl
+ 75	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_15_results.pkl
+ 76	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_16_results.pkl
+ 77	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_17_results.pkl
+ 78	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_18_results.pkl
+ 79	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_4_rotation_19_results.pkl
+ 80	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_0_results.pkl
+ 81	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_1_results.pkl
+ 82	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_2_results.pkl
+ 83	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_3_results.pkl
+ 84	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_4_results.pkl
+ 85	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_5_results.pkl
+ 86	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_6_results.pkl
+ 87	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_7_results.pkl
+ 88	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_8_results.pkl
+ 89	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_9_results.pkl
+ 90	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_10_results.pkl
+ 91	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_11_results.pkl
+ 92	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_12_results.pkl
+ 93	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_13_results.pkl
+ 94	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_14_results.pkl
+ 95	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_15_results.pkl
+ 96	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_16_results.pkl
+ 97	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_17_results.pkl
+ 98	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_18_results.pkl
+ 99	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_5_rotation_19_results.pkl
+100	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_0_results.pkl
+101	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_1_results.pkl
+102	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_2_results.pkl
+103	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_3_results.pkl
+104	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_4_results.pkl
+105	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_5_results.pkl
+106	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_6_results.pkl
+107	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_7_results.pkl
+108	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_8_results.pkl
+109	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_9_results.pkl
+110	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_10_results.pkl
+111	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_11_results.pkl
+112	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_12_results.pkl
+113	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_13_results.pkl
+114	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_14_results.pkl
+115	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_15_results.pkl
+116	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_16_results.pkl
+117	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_17_results.pkl
+118	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_18_results.pkl
+119	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_9_rotation_19_results.pkl
+120	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_0_results.pkl
+121	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_1_results.pkl
+122	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_2_results.pkl
+123	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_3_results.pkl
+124	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_4_results.pkl
+125	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_5_results.pkl
+126	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_6_results.pkl
+127	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_7_results.pkl
+128	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_8_results.pkl
+129	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_9_results.pkl
+130	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_10_results.pkl
+131	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_11_results.pkl
+132	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_12_results.pkl
+133	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_13_results.pkl
+134	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_14_results.pkl
+135	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_15_results.pkl
+136	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_16_results.pkl
+137	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_17_results.pkl
+138	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_18_results.pkl
+139	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_13_rotation_19_results.pkl
+140	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_0_results.pkl
+141	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_1_results.pkl
+142	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_2_results.pkl
+143	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_3_results.pkl
+144	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_4_results.pkl
+145	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_5_results.pkl
+146	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_6_results.pkl
+147	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_7_results.pkl
+148	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_8_results.pkl
+149	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_9_results.pkl
+150	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_10_results.pkl
+151	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_11_results.pkl
+152	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_12_results.pkl
+153	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_13_results.pkl
+154	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_14_results.pkl
+155	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_15_results.pkl
+156	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_16_results.pkl
+157	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_17_results.pkl
+158	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_18_results.pkl
+159	./results/bmi_ddtheta_hidden_10_5_JI_Ntraining_18_rotation_19_results.pkl
+Missing indices (150): 10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159
