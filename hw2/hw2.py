@@ -103,9 +103,19 @@ def exp_type_to_hyperparameters(args):
     :param args: ArgumentParser
     :return: Hyperparameter set (in dictionary form)
     '''
-    # TODO (useful for having multiple Cartesian product parameter sets)
     
-    if args.exp_type == 'bmi':
+    if args.exp_type == 'noreg':
+        p = {'Ntraining': [1,2,3,5,9,13,18], 
+             'rotation': range(20)}
+    elif args.exp_type == 'dropout':
+        p = {'dropout': [0.1, 0.25, 0.4, 0.5, 0.7],
+             'Ntraining': [1,2,3,5,9,13,18], 
+             'rotation': range(20)}
+    elif args.exp_type == 'lpreg':
+        p = {'l1': [1, 0.1, 0.01, 0.001, 0.0001]
+             'Ntraining': [1,2,3,5,9,13,18], 
+             'rotation': range(20)}
+    elif args.exp_type == 'bmi':
         p = {'Ntraining': [1,2,3,4,5,9,13,18], 
              'rotation': range(20)}
     else: 
@@ -288,7 +298,7 @@ def create_parser():
     # Network details
     parser.add_argument('--activation_out', type=str, default=None, help='Activation for output layer')
     parser.add_argument('--activation_hidden', type=str, default='elu', help='Activation for hidden layers')
-    parser.add_argument('--hidden', nargs='+', type=int, default=[10, 5], help='Number of hidden units per layer (sequence of ints)')
+    parser.add_argument('--hidden', nargs='+', type=int, default=[400, 200, 100, 50, 25, 12], help='Number of hidden units per layer (sequence of ints)')
 
     # Experiment details
     parser.add_argument('--rotation', type=int, default=0, help='Cross-validation rotation')
@@ -302,7 +312,7 @@ def create_parser():
     # Training parameters
     parser.add_argument('--lrate', type=float, default=0.001, help="Learning rate")
 
-    ## Don't use these for HW 1
+    # Regularization
     parser.add_argument('--dropout', type=float, default=None, help="Dropout rate")
     parser.add_argument('--L1_regularization', '--l1', type=float, default=None, help="L1 regularization factor (only active if no L2)")
     parser.add_argument('--L2_regularization', '--l2', type=float, default=None, help="L2 regularization factor")
