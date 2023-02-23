@@ -7,8 +7,8 @@
 # memory in MB
 #SBATCH --mem=1024
 # The %j is translated into the job number
-#SBATCH --output=results/hw0_%j_stdout.txt
-#SBATCH --error=results/hw0_%j_stderr.txt
+#SBATCH --output=results/hw2_%j_stdout.txt
+#SBATCH --error=results/hw2_%j_stderr.txt
 #SBATCH --time=00:30:00
 #SBATCH --job-name=hw2_test
 #SBATCH --mail-user=ikang@ou.edu

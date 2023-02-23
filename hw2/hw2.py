@@ -112,7 +112,7 @@ def exp_type_to_hyperparameters(args):
              'Ntraining': [1,2,3,5,9,13,18], 
              'rotation': range(20)}
     elif args.exp_type == 'lpreg':
-        p = {'l1': [1, 0.1, 0.01, 0.001, 0.0001]
+        p = {'l1': [1, 0.1, 0.01, 0.001, 0.0001],
              'Ntraining': [1,2,3,5,9,13,18], 
              'rotation': range(20)}
     elif args.exp_type == 'bmi':
