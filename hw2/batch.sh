@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#SBATCH --partition=debug
+#SBATCH --partition=normal
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=10
 # memory in MB
@@ -14,7 +14,7 @@
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
 #SBATCH --chdir=/home/cs504306/aml/hw2
-#SBATCH --array=0-199
+#SBATCH --array=200-699
 #
 #################################################
 
