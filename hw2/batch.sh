@@ -10,7 +10,7 @@
 #SBATCH --output=results/hw2_%j_stdout.txt
 #SBATCH --error=results/hw2_%j_stderr.txt
 #SBATCH --time=00:10:00
-#SBATCH --job-name=hw2_test
+#SBATCH --job-name=hw2_dropout
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
 #SBATCH --chdir=/home/cs504306/aml/hw2
