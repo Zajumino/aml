@@ -14,7 +14,7 @@
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
 #SBATCH --chdir=/home/cs504306/aml/hw2
-#SBATCH --array=200-699
+#SBATCH --array=0-699
 #
 #################################################
 
