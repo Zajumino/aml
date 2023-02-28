@@ -1,0 +1,7 @@
+--Ntraining=3
+--epochs=2000
+--patience=20
+--batch=256
+--shuffle=200
+--monitor=val_sparse_categorical_accuracy
+-v
