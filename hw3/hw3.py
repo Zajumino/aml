@@ -92,7 +92,7 @@ def create_parser():
     parser.add_argument('--kernel_size', nargs='+', type=int, default=[3,5], help='Convolution filter size per layer (sequence of ints)')
     parser.add_argument('--strides', nargs='+', type=int, default=[2,2], help='Downsampling stride (1=None)')
     parser.add_argument('--padding', type=str, default='valid', help='Padding type for convolutional layers')
-    parser.add_argument('--downsampling_mode', type=str, default='stride', help='Downsampling type for convolutional layers')
+    parser.add_argument('--downsampling_mode', type=str, default='max', help='Downsampling type for convolutional layers')
 
 
     # Fully Connected parameters

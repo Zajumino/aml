@@ -5,7 +5,7 @@ Author: I-Kang Kennedy
 import tensorflow as tf
 from keras import layers
 
-def create_cnn_classifier_network(input_shape, in_channels, out_classes, filters, kernel_size, strides, padding='valid', activation='relu', downsampling_mode='max', flatten=False, fc=[], dropout=None, spatial_dropout=None, lambda_l2=None, lrate=0.001, loss='sparse_categorical_crossentropy', metrics=None):
+def create_cnn_classifier_network(input_shape, in_channels, out_classes, filters, kernel_size, strides, padding='valid', activation='relu', downsampling_mode='stride', flatten=False, fc=[], dropout=None, spatial_dropout=None, lambda_l2=None, lrate=0.001, loss='sparse_categorical_crossentropy', metrics=None):
 
     '''Description
 
