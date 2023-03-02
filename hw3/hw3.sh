@@ -8,9 +8,9 @@
 #SBATCH --error=results/hw3_%04a_stderr.txt
 #SBATCH --time=08:00:00
 #SBATCH --job-name=hw3
-#SBATCH --mail-user=YOUR OWN EMAIL ADDRESS
+#SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
-#SBATCH --chdir=YOUR OWN DIRECTORY
+#SBATCH --chdir=/home/cs504306/aml/hw3
 ##SBATCH --array=1
 #
 #################################################
