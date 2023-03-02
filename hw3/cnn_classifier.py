@@ -51,7 +51,7 @@ def create_cnn_classifier_network(input_shape, in_channels, out_classes, filters
             model.add(tf.keras.layers.Conv2D(filters[i], kernel_size[i], padding=padding, activation=activation, use_bias=True))
         if spatial_dropout is not None:
             model.add(tf.keras.layers.SpatialDropout2D(spatial_dropout))
-        if downsampling_mode == 'max':
+        if downsampling_mode == 'max' and strides[i] > 1:
             model.add(tf.keras.layers.MaxPooling2D(strides[i]))
     
     # Flatten option

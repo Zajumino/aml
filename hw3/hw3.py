@@ -90,7 +90,7 @@ def create_parser():
     # Convolutional parameters
     parser.add_argument('--filters', nargs='+', type=int, default=[10,15], help='Convolution filters per layer (sequence of ints)')
     parser.add_argument('--kernel_size', nargs='+', type=int, default=[3,5], help='Convolution filter size per layer (sequence of ints)')
-    parser.add_argument('--stride', nargs='+', type=int, default=[2,2], help='Downsampling stride (1=None)')
+    parser.add_argument('--strides', nargs='+', type=int, default=[2,2], help='Downsampling stride (1=None)')
     parser.add_argument('--padding', type=str, default='valid', help='Padding type for convolutional layers')
     parser.add_argument('--downsampling_mode', type=str, default='stride', help='Downsampling type for convolutional layers')
 
@@ -395,7 +395,7 @@ def execute_exp(args=None):
 
     # Build network
     model = create_cnn_classifier_network(input_shape=args.image_size, in_channels=nchannels, out_classes=n_classes,
-                                          filters=args.filters, kernel_size=args.kernel_size, strides=args.size,
+                                          filters=args.filters, kernel_size=args.kernel_size, strides=args.strides,
                                           padding=args.padding, downsampling_mode=args.downsampling_mode,
                                           flatten=False, fc=args.fc,
                                           dropout=args.dropout, spatial_dropout=args.spatial_dropout, lambda_l2=args.L2_regularization,
