@@ -6,12 +6,12 @@
 #SBATCH --mem=15000
 #SBATCH --output=results/hw3_%04a_stdout.txt
 #SBATCH --error=results/hw3_%04a_stderr.txt
-#SBATCH --time=08:00:00
+#SBATCH --time=48:00:00
 #SBATCH --job-name=hw3_shal
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
 #SBATCH --chdir=/home/cs504306/aml/hw3
-#SBATCH --array=0-4
+#SBATCH --array=0-5
 #
 #################################################
 # Do not change this line unless you have your own python/tensorflow/keras set up
@@ -20,5 +20,5 @@
 conda activate tf
 
 # 2023
-python hw3_base.py @oscer.txt @exp.txt @net_shallow.txt --exp_index $SLURM_ARRAY_TASK_ID --cpus_per_task $SLURM_CPUS_PER_TASK
+python hw3.py @oscer.txt @exp.txt @net_shallow.txt --exp_index $SLURM_ARRAY_TASK_ID --cpus_per_task $SLURM_CPUS_PER_TASK
 

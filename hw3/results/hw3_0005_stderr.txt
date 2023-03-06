@@ -1,0 +1,13 @@
+2023-03-04 01:39:01.667731: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-04 01:39:08.954637: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2023-03-04 01:39:08.954699: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+Traceback (most recent call last):
+  File "/home/cs504306/aml/hw3/hw3.py", line 543, in <module>
+    execute_exp(args)
+  File "/home/cs504306/aml/hw3/hw3.py", line 380, in execute_exp
+    args_str = augment_args(args)
+  File "/home/cs504306/aml/hw3/hw3.py", line 190, in augment_args
+    assert (args.exp_index >= 0 and args.exp_index < ji.get_njobs()), "exp_index out of range"
+AssertionError: exp_index out of range
+slurmstepd: error: acct_gather_profile/influxdb _send_data: curl_easy_perform failed to send data (discarded). Reason: Couldn't resolve host name

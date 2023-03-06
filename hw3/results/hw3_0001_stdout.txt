@@ -1,0 +1,75 @@
+NO GPU
+1
+Total jobs: 5
+{'rotation': 1}
+Training:  [1 2 3]
+Validation:  4
+Testing:  0
+Training set has 35985 samples
+Validation set has 11990 samples
+Testing set has 11990 samples
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 126, 126, 10)      280       
+                                                                 
+ spatial_dropout2d (SpatialD  (None, 126, 126, 10)     0         
+ ropout2D)                                                       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 63, 63, 10)       0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (None, 61, 61, 20)        1820      
+                                                                 
+ spatial_dropout2d_1 (Spatia  (None, 61, 61, 20)       0         
+ lDropout2D)                                                     
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 30, 30, 20)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (None, 28, 28, 30)        5430      
+                                                                 
+ spatial_dropout2d_2 (Spatia  (None, 28, 28, 30)       0         
+ lDropout2D)                                                     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (None, 14, 14, 30)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_3 (Conv2D)           (None, 12, 12, 40)        10840     
+                                                                 
+ spatial_dropout2d_3 (Spatia  (None, 12, 12, 40)       0         
+ lDropout2D)                                                     
+                                                                 
+ max_pooling2d_3 (MaxPooling  (None, 6, 6, 40)         0         
+ 2D)                                                             
+                                                                 
+ conv2d_4 (Conv2D)           (None, 4, 4, 50)          18050     
+                                                                 
+ spatial_dropout2d_4 (Spatia  (None, 4, 4, 50)         0         
+ lDropout2D)                                                     
+                                                                 
+ max_pooling2d_4 (MaxPooling  (None, 2, 2, 50)         0         
+ 2D)                                                             
+                                                                 
+ global_max_pooling2d (Globa  (None, 50)               0         
+ lMaxPooling2D)                                                  
+                                                                 
+ dense (Dense)               (None, 50)                2550      
+                                                                 
+ dropout (Dropout)           (None, 50)                0         
+                                                                 
+ dense_1 (Dense)             (None, 20)                1020      
+                                                                 
+ dropout_1 (Dropout)         (None, 20)                0         
+                                                                 
+ dense_2 (Dense)             (None, 4)                 80        
+                                                                 
+=================================================================
+Total params: 40,070
+Trainable params: 40,070
+Non-trainable params: 0
+_________________________________________________________________
+None
+Namespace(check=False, nogo=False, verbose=1, cpus_per_task=10, gpu=False, exp_type=None, label=None, dataset='/home/fagg/datasets/core50/core50_128x128', image_size=[128, 128, 3], meta_dataset='core50_df.pkl', Nfolds=5, results_path='./results', exp_index=1, rotation=1, epochs=2000, Ntraining=3, lrate=0.001, filters=[10, 20, 30, 40, 50], kernel_size=[3, 3, 3, 3, 3], strides=[2, 2, 2, 2, 2], padding='valid', downsampling_mode='max', fc=[50, 20], dropout=0.5, spatial_dropout=0.2, L1_regularization=None, L2_regularization=0.0005, min_delta=0.0, patience=20, monitor='val_sparse_categorical_accuracy', batch=256, prefetch=3, num_parallel_calls=4, cache=None, shuffle=200, generator_seed=42, repeat=False, steps_per_epoch=None, save_model=False)
+File ./results/image_Csize_3_3_3_3_3_Cfilters_10_20_30_40_50_Pool_2_2_2_2_2_Pad_valid_hidden_50_20_drop_0.500_L2_0.000500_LR_0.001000_ntrain_03_rot_01_results.pkl already exists
