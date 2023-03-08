@@ -20,5 +20,5 @@
 conda activate tf
 
 # 2023
-python hw3.py @oscer.txt @exp.txt @net_deep.txt --exp_index $SLURM_ARRAY_TASK_ID --cpus_per_task $SLURM_CPUS_PER_TASK
+python hw3.py @oscer.txt @exp.txt @net_deep.txt --exp_index $SLURM_ARRAY_TASK_ID --cpus_per_task $SLURM_CPUS_PER_TASK --save_model
 
