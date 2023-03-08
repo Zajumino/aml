@@ -1,0 +1,76 @@
+NO GPU
+2
+Total jobs: 5
+{'rotation': 2}
+Training:  [2 3 4]
+Validation:  0
+Testing:  1
+Training set has 35977 samples
+Validation set has 11990 samples
+Testing set has 11998 samples
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 124, 124, 16)      1216      
+                                                                 
+ spatial_dropout2d (SpatialD  (None, 124, 124, 16)     0         
+ ropout2D)                                                       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 62, 62, 16)       0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (None, 60, 60, 24)        3480      
+                                                                 
+ spatial_dropout2d_1 (Spatia  (None, 60, 60, 24)       0         
+ lDropout2D)                                                     
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 30, 30, 24)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (None, 28, 28, 32)        6944      
+                                                                 
+ spatial_dropout2d_2 (Spatia  (None, 28, 28, 32)       0         
+ lDropout2D)                                                     
+                                                                 
+ conv2d_3 (Conv2D)           (None, 26, 26, 40)        11560     
+                                                                 
+ spatial_dropout2d_3 (Spatia  (None, 26, 26, 40)       0         
+ lDropout2D)                                                     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (None, 13, 13, 40)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_4 (Conv2D)           (None, 11, 11, 48)        17328     
+                                                                 
+ spatial_dropout2d_4 (Spatia  (None, 11, 11, 48)       0         
+ lDropout2D)                                                     
+                                                                 
+ conv2d_5 (Conv2D)           (None, 9, 9, 56)          24248     
+                                                                 
+ spatial_dropout2d_5 (Spatia  (None, 9, 9, 56)         0         
+ lDropout2D)                                                     
+                                                                 
+ conv2d_6 (Conv2D)           (None, 7, 7, 64)          32320     
+                                                                 
+ spatial_dropout2d_6 (Spatia  (None, 7, 7, 64)         0         
+ lDropout2D)                                                     
+                                                                 
+ global_max_pooling2d (Globa  (None, 64)               0         
+ lMaxPooling2D)                                                  
+                                                                 
+ dense (Dense)               (None, 64)                4160      
+                                                                 
+ dropout (Dropout)           (None, 64)                0         
+                                                                 
+ dense_1 (Dense)             (None, 16)                1040      
+                                                                 
+ dropout_1 (Dropout)         (None, 16)                0         
+                                                                 
+ dense_2 (Dense)             (None, 4)                 64        
+                                                                 
+=================================================================
+Total params: 102,360
+Trainable params: 102,360
+Non-trainable params: 0
+_________________________________________________________________

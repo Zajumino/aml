@@ -4,9 +4,9 @@
 #SBATCH --cpus-per-task=10
 # memory in MB
 #SBATCH --mem=15000
-#SBATCH --output=results/hw3_%04a_stdout.txt
-#SBATCH --error=results/hw3_%04a_stderr.txt
-#SBATCH --time=48:00:00
+#SBATCH --output=results/hw3_shal_%04a_stdout.txt
+#SBATCH --error=results/hw3_shal_%04a_stderr.txt
+#SBATCH --time=08:00:00
 #SBATCH --job-name=hw3_shal
 #SBATCH --mail-user=ikang@ou.edu
 #SBATCH --mail-type=ALL
