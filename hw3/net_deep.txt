@@ -1,18 +1,18 @@
 --kernel_size
 5
-5
+3
 3
 3
 3
 3
 3
 --filters
-8
 16
 24
 32
+40
 48
-64
+56
 64
 --strides
 2
@@ -27,3 +27,4 @@
 16
 --dropout=.5
 --spatial_dropout=.2
+--l2=.0005
